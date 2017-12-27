@@ -37,7 +37,6 @@ grandpa.oxquiz = {
 	init : function() {
         this._renderQuiz();
         this._buildQuickSearchData();
-		console.log('init!');
         this.eventBind();
     },
 
@@ -71,7 +70,7 @@ grandpa.oxquiz = {
 
     doQuickSearch : function(keyword) {
         var matchResult = grandpa.oxquiz.data.filter(function(element, index, array){
-            return element.q.match(keyword);
+            return element.quickSearch.match(keyword);
         });
 
         if(matchResult.length == 0) {
