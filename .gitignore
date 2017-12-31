@@ -1,3 +1,4 @@
 
 #data 폴더 예외처리
 /data
+*.xlsx
